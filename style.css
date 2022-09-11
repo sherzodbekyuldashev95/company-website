@@ -6,11 +6,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*aligning content on mobile*/
 .container {
   width: 84%;
   margin: 0 auto;
 }
 
+/*aligning content on desktop*/
 @media (min-width: 900px) {
   .container {
     width: 91%;
@@ -224,5 +226,130 @@ a:hover {
 @media (max-width: 374px) {
   .message h2 {
     font-size: 20px;
+  }
+}
+
+/*Services*/
+
+.services {
+  padding: 67px 0;
+  text-align: center;
+}
+
+.services h2 {
+  display: inline-block;
+  color: #2E5180;
+  border-bottom: 2px dotted currentColor;
+  padding-bottom: 9px;
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+.services h2 + p {
+  color: #2E5180;
+  font-size: 16px;
+  margin-bottom: 53px;
+}
+
+@media (min-width: 900px) {
+  .services {
+    padding: 94px 0 87px;
+  }
+
+  .services h2 {
+    font-size: 36px;
+  }
+
+  .services h2 + p {
+    margin-bottom: 75px;
+  }
+}
+
+/*Services > Features*/
+
+.features{
+  color: #333;
+}
+
+.feature:not(:last-child) {
+  margin-bottom: 67px;
+}
+
+.feature h3 {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+}
+
+.feature p {
+  max-width: 264px;
+  margin: 0 auto 25px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.feature figure img {
+  width: 100%;
+  vertical-align: bottom;
+  height: 246px;
+  object-fit: cover;
+  margin-bottom: 22px ;
+}
+
+.feature a.btn {
+  display: block;
+  width: 208px;
+  margin: 0 auto;
+  padding: 13px 13px 14px;
+  border-radius: 24px;
+  color: #2E5180;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid currentColor;
+}
+
+@media (min-width: 900px) {
+  .features {
+    display: flex;
+  }
+
+  .feature {
+    flex: 1;
+    margin-right: 3.22%;
+  }
+
+  .feature:first-child {
+    margin-left: 3.22%;
+  }
+
+  .feature:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .feature h3 {
+    margin-bottom: 26px;
+    font-size: 30px;
+    line-height: 1.4;
+  }
+
+  .feature p {
+    width: 78%;
+    max-width: none;
+  }
+
+  .feature figure img{
+    height: 360px;
+    margin-bottom: 33px;
+  }
+
+  /*button alignment*/
+  .feature {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature a.btn {
+    margin-top: auto;
   }
 }
