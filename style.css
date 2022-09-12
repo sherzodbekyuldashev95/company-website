@@ -139,53 +139,53 @@ a:hover {
 /*Hero*/
 
 .hero {
-    height: 400px;
-    background-image: url(img/hero.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
+  height: 400px;
+  background-image: url(img/hero.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
 }
 
 
 .hero .headline {
-    flex: auto;
-    align-self: flex-end;
-    padding: 33px 0;
-    background-color: rgba(255, 255, 255, 76%);
+  flex: auto;
+  align-self: flex-end;
+  padding: 33px 0;
+  background-color: rgba(255, 255, 255, 76%);
 }
 
 .hero .container {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 
 }
 
-.hero img{
-    max-width: 100%;
-    height: auto;
-    vertical-align: bottom;
+.hero img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }
 
-.hero p{
-    font-size: 15px;
-    color: #2E5180;
-    margin-bottom: 15px;
+.hero p {
+  font-size: 15px;
+  color: #2E5180;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 900px) {
-    .hero {
-        height: 700px;
-    }
+  .hero {
+    height: 700px;
+  }
 
-    .hero .headline {
-        padding: 47px 0 44px;
-    }
+  .hero .headline {
+    padding: 47px 0 44px;
+  }
 
-    .hero p{
-        font-size: 18px;
-        margin-bottom: 22px;
-    }
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
 }
 
 
@@ -245,7 +245,7 @@ a:hover {
   font-size: 26px;
 }
 
-.services h2 + p {
+.services h2+p {
   color: #2E5180;
   font-size: 16px;
   margin-bottom: 53px;
@@ -260,14 +260,14 @@ a:hover {
     font-size: 36px;
   }
 
-  .services h2 + p {
+  .services h2+p {
     margin-bottom: 75px;
   }
 }
 
 /*Services > Features*/
 
-.features{
+.features {
   color: #333;
 }
 
@@ -293,10 +293,10 @@ a:hover {
   vertical-align: bottom;
   height: 246px;
   object-fit: cover;
-  margin-bottom: 22px ;
+  margin-bottom: 22px;
 }
 
-.feature a.btn {
+.btn {
   display: block;
   width: 208px;
   margin: 0 auto;
@@ -338,7 +338,7 @@ a:hover {
     max-width: none;
   }
 
-  .feature figure img{
+  .feature figure img {
     height: 360px;
     margin-bottom: 33px;
   }
@@ -351,5 +351,110 @@ a:hover {
 
   .feature a.btn {
     margin-top: auto;
+  }
+}
+
+/*Contact Us*/
+
+.contact {
+  padding: 61px 0;
+  background-color: #EEF4F8;
+  color: #333;
+  /* max-width: 1240px; */
+}
+
+@media (min-width: 900px) {
+  .contact{
+    padding: 0;
+    background: none;
+  }
+
+
+  .contact .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 9% 62px;
+    box-sizing: border-box;
+    background-color: #EEF4F8;
+  }
+
+  .contact .text {
+    flex: 0 0 auto;
+  }
+
+  .contact .form{
+    flex: 1 1 auto;
+    max-width: 457px;
+    margin-left: 1em;
+    margin-top: 0;
+  }
+
+  .contact h2{
+    font-size: 36px;
+  }
+}
+
+
+.contact h2 {
+  font-size: 26px;
+  margin-bottom: 42px;
+}
+
+.contact h2+p {
+  font-size: 13px;
+  line-height: 2;
+  margin-bottom: 47px;
+}
+
+@media (min-width: 900px) {
+  .contact h2 {
+    font-size: 36px;
+  }
+
+  .contact h2+p {
+    font-size: 15px;
+    line-height: 1.73;
+  }
+}
+
+
+/*Contact Us Form*/
+
+.form input[type='text'],
+.form input[type='email'],
+.form textarea {
+  width: 100%;
+  margin-bottom: 17px;
+  padding: 14px 20px 15px;
+  border: 1px solid #CDD6DD;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.form::placeholder{
+  color: #CDD6DD;
+}
+
+.form textarea {
+  height: 150px;
+}
+
+
+.form .btn{
+  width: 100%;
+  margin: 0;
+  border: none;
+  background-color: #2E5180;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+@media (min-width: 900px) {
+  .form .btn {
+    width: 272px;
   }
 }
