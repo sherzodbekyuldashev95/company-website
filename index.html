@@ -30,7 +30,15 @@
                 </div>
             </div>
 
-            <button type="button" class="nav-button">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#" class="btn">CONTACT US</a></li>
+                </ul>
+            </nav>
+
+            <button type="button" class="nav-button" onclick="navFunc()">
                 <span class="sr-only">MENU</span>
             </button>
         </div>
@@ -170,6 +178,12 @@
 
         </div>
     </footer>
+
+    <script>
+        function navFunc() {
+            document.querySelector('html').classList.toggle('open');
+        }
+    </script>
           
 </body>
 
