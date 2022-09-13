@@ -486,6 +486,7 @@ a:hover {
 .footer .sns {
   list-style: none;
   display: flex;
+  align-items: center;
   margin-left: 61px;
 }
 
